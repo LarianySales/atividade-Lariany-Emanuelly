@@ -1,0 +1,21 @@
+<h1>Edite: {{user.name}} 😷</h1>
+<a href="/">Voltar</a>
+<form action="/users/update" method="post" class="form">
+<input type="hidden" name="id" value="{{user.id}}">
+    <div class="form-control">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" value="{{user.nome}}">
+    </div>
+    <div class="form-control">
+        <label for="email">Email: </label>
+        <input type="email" name="email" value="{{user.email}}">
+    </div>
+    <div class="form-control">
+        <label for="password">Senha: </label>
+        <input type="password" name="password" value="{{user.password}}">
+    </div>
+   
+    <div class="form-control">
+            <input type="submit" value="Atualizar">
+        </div>
+</form>
